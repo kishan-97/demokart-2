@@ -1,73 +1,72 @@
 <%- include('partials/top'); -%>
 
-<section id="header">
-    <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt=""></a>
 
-    <div>
-        <ul id="navbar">
-            <li><a class="active" href="/">Home</a></li>
-            <li><a href="/shop">Shop</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/blog">About</a></li>
-            <li><a href="/contact">Contact</a></li>
-            <li id="lg-bag"><a href="/cart"><i class="fas fa-shopping-bag"></i></a></li>
-            <li>
-            
-                <!-- Dropdown Trigger -->
-            <a class='dropdown-trigger' href='#' data-target='dropdown1'><img src="img/login.png" style="height:28px"></img></a>
-
-            <!-- Dropdown Structure -->
-            <ul id='dropdown1' class='dropdown-content' style="overflow:hidden;width:300px;margin-top:50px" >
-                <li><a class="loginbtn" style="margin-left: -17px;" href="/login">Login</a></li>
-                <li><a class="signupbtn" style="margin-left: -17px;" href="/signup">Signup</a></li>
-                
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="/">Home</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/blog">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li id="lg-bag"><a href="/cart"><i class="fas fa-shopping-bag"></i></a></li>
+                <li>
+                    <div class="dropdown">
+                        <div  type="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img style="height: 28px;" src="img/login.png" alt="">
+                        </div>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">SignUp</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <a href="#" id="close"><i class="fas fa-times"></i></a>
             </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
 
-            </li>
-            <a href="#" id="close" ><i class="fas fa-times"></i></a>
-        </ul>
-    </div>
-    <div id="mobile">
-        <a href="cart.html"><i class="fas fa-shopping-bag"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
 
-        <i id="bar" class="fas fa-outdent"></i>
-    </div>
-</section>
+    <section id="hero">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all products</h1>
+        <p>Save more with coupons & up to 70% off!</p>
+        <button>Shop Now</button>
+    </section>
 
-<section id="hero">
-    <h4>Trade-in-offer</h4>
-<h2>Super value deals</h2>
-<h1>On all products</h1>
-<p>Save more with coupons & up to 70% off!</p>
-<button>Shop Now</button>
-</section>
-
-<section id="feature" class="section-p1">
-    <div class="fe-box">
-        <img src="img/features/f1.png" alt="">
-        <h6>Free Shipping</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f2.png" alt="">
-        <h6>Order Online</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f3.png" alt="">
-        <h6>Save Money</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f4.png" alt="">
-        <h6>Promotions</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f5.png" alt="">
-        <h6>Happy Sell</h6>
-    </div>
-    <div class="fe-box">
-        <img src="img/features/f6.png" alt="">
-        <h6>24/7 Support</h6>
-    </div>
-</section>
+    <section id="feature" class="section-p1">
+        <div class="fe-box">
+            <img src="img/features/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f2.png" alt="">
+            <h6>Order Online</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f3.png" alt="">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f4.png" alt="">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f5.png" alt="">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="img/features/f6.png" alt="">
+            <h6>24/7 Support</h6>
+        </div>
+    </section>
 
     <section id="product1" class="section-p1">
         <h2>Featured Products</h2>
@@ -363,18 +362,18 @@
     <section id="banner3">
         <div class="banner-box">
             <h2>SEASONAL SALE</h2>
-            <h3>Winter Collectio -50% OFF</h3>           
+            <h3>Winter Collectio -50% OFF</h3>
         </div>
         <div class="banner-box banner-box2">
             <h2>NEW FOOTWEAR COLLECTION</h2>
-            <h3>Spring/Summer 2022</h3>           
+            <h3>Spring/Summer 2022</h3>
         </div>
         <div class="banner-box banner-box3">
             <h2>T-Shirts</h2>
-            <h3>New Trendy Prints</h3>           
+            <h3>New Trendy Prints</h3>
         </div>
     </section>
 
-    
+
 
     <%- include('partials/footer'); -%>
