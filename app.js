@@ -5,6 +5,8 @@ const ejs = require("ejs");
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
+
+const auth_route=require('./routes/auth_route');
 app.use(express.static("public"));
 app.set('view engine','ejs')
 
@@ -35,6 +37,12 @@ app.get("/contact",(req,res)=>{
 app.get("/cart",(req,res)=>{
     res.render("cart")
 })
+
+app.get('/login',(req,res)=>{
+    res.render("login");
+});
+
+app.use('/api',auth_route);
 
 app.listen(3000,()=>{
     console.log("Server running");
