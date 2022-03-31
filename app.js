@@ -15,6 +15,12 @@ app.use(view_route);
 
 app.use('/api',auth_route);
 
+app.get('/login',(req,res)=>{
+    res.render("login");
+});
+
+app.use('/api',auth_route);
+
 app.listen(3000,()=>{
     console.log("Server running");
 })
